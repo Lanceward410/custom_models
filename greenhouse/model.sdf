@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="greenhouse">
+   <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <scale>1.0 1.0 1.0</scale>
+            <uri>model://greenhouse/meshes/greenhouse.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <inertial>
+	<mass value="100"/>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1.0 1.0 1.0</scale>
+            <uri>model://greenhouse/meshes/greenhouse.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
